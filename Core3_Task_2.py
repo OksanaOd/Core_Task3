@@ -1,5 +1,4 @@
 import random
-
 # Hometask 2
 #генерує набір унікальних випадкових чисел у межах заданих параметрів 
 def get_numbers_ticket(min, max, quantity):
@@ -8,11 +7,10 @@ def get_numbers_ticket(min, max, quantity):
   while i < quantity :
     new_elem = random.randint(min,max)
     if list_digitals.count(new_elem)==0:
-       #ця умова виключає неунікальні числф
+      #ця умова виключає неунікальні числф
       list_digitals.append(new_elem)
       i= i + 1
   return sorted(list_digitals)    
-
 
 min = int(input("Ввведить min, яке не менше 1 "))
 max = int(input("Ввведить max, яке не більше 1000 "))

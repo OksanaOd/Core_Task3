@@ -1,6 +1,5 @@
 from datetime import datetime, date, timedelta
 import re
-
 #Hometask 4
 # виводить список колег, яких потрібно привітати з днем народження на один тиждень вперед.
 users = [
@@ -24,19 +23,16 @@ def prepare_user_list(user_data):
     prepared_list.append({"name": user["name"], "birthday": string_to_date(user["birthday"])})
   return prepared_list
 
-
 def find_next_weekday(start_date, weekday):
   days_ahead = weekday - start_date.weekday()
   if days_ahead <= 0:
     days_ahead += 7
   return start_date + timedelta(days=days_ahead)
 
-
 def adjust_for_weekend(birthday):
   if birthday.weekday() >= 5:
     return find_next_weekday(birthday, 0)
   return birthday
-
 
 def get_upcoming_birthdays(users, days=7):
   upcoming_birthdays = []
