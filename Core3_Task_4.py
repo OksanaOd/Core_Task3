@@ -1,6 +1,6 @@
 from datetime import datetime, date, timedelta
 import re
-#Hometask 4
+#Hometask 4 #
 # виводить список колег, яких потрібно привітати з днем народження на один тиждень вперед.
 users = [
     {"name": "Bill Gates", "birthday": "1955.3.25"},
