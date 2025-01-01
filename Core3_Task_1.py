@@ -1,4 +1,5 @@
 from datetime import datetime, date, timedelta
+
 #Hometask 1
 #розрахує кількість днів між заданою датою і поточною датою
 def string_to_date(date_string):
