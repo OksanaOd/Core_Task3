@@ -12,8 +12,10 @@ def get_numbers_ticket(min, max, quantity):
   
   if min<1 or max>1000 or (max-min)<0 :
     print("MIN та MAX повинні бути між 1 то 1000,та MAX повинен бути більше MIN ")
+    return []
   elif (max-min+1)<quantity :
     print(f"при введених MIN та MAX , quantity має бути не більше {max-min+1}")
+    return []
   else:
     while i < quantity :
       new_elem = random.randint(min,max)

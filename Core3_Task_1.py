@@ -9,8 +9,10 @@ def get_days_from_today(date):
   try:
     days_return = (datetime.today().date()-string_to_date(date)).days
     return days_return 
-  except:
-    print("Вхідна дата має некоректний формат")   
+  except:    
+    
+    print("Вхідна дата має некоректний формат") 
+   
   
 days_from_today = get_days_from_today('2024-12-07')
 if days_from_today != None:
